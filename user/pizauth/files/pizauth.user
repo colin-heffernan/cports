@@ -1,0 +1,3 @@
+type = bgprocess
+command = /usr/bin/pizauth server -vvvv -d
+stop-command = /usr/bin/pizauth shutdown
