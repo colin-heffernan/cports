@@ -1,6 +1,6 @@
 pkgname = "beets"
-pkgver = "2.12.0"
-pkgrel = 1
+pkgver = "2.14.1"
+pkgrel = 0
 build_style = "python_pep517"
 make_check_args = [
     # pytest fixture client not found
@@ -19,8 +19,8 @@ make_check_args = [
 ]
 hostmakedepends = [
     "python-build",
+    "python-hatchling",
     "python-installer",
-    "python-poetry-core",
 ]
 depends = [
     "python-confuse",
@@ -48,7 +48,7 @@ pkgdesc = "CLI media library management"
 license = "MIT"
 url = "https://beets.io"
 source = f"$(PYPI_SITE)/b/beets/beets-{pkgver}.tar.gz"
-sha256 = "c5e844c4785a8b2c53a791a2b7bcd5846b4d12b0e8209e8eabfee06cec57edf2"
+sha256 = "b25dc7bf8ed093d8b6e043e88013736902c1082c958b81a598af5db5275539a5"
 
 
 def init_check(self):
